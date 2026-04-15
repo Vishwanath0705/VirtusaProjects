@@ -7,42 +7,6 @@ Admin can manage questions and view results, while students can register, login,
 
 ---
 
-## Project Structure
-
-
-QuizApplication/
-|
-|-- AdminPanel/
-| |-- AddQuestion.java
-| |-- AdminMenu.java
-| |-- DeleteQuestion.java
-| |-- UpdateQuestion.java
-| |-- ViewAllQuestions.java
-| |-- ViewResult.java
-|
-|-- StudentPanel/
-| |-- InstructionsPage.java
-| |-- QuizPage.java
-| |-- ResultPage.java
-| |-- StudentDetails.java
-|
-|-- Login/
-| |-- QuizLogin.java
-| |-- Register.java
-| |-- ForgotPassword.java
-|
-|-- Database/
-| |-- DBConnection.java
-| |-- DatabaseSetup.java
-|
-|-- Main/
-| |-- java.java
-|
-|-- README.md
-
-
----
-
 ## Features
 
 ### Admin Panel
