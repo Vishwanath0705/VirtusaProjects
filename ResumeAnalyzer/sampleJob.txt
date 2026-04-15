@@ -1,0 +1,42 @@
+Job Title: Machine Learning Engineer
+Location: Hyderabad, India
+Company: TechNova Solutions Pvt. Ltd.
+Experience: 0–2 Years (Freshers can apply)
+
+About the Role:
+We are looking for a motivated Machine Learning Engineer to join our AI team. The candidate will be responsible for building, training, and deploying machine learning models to solve real-world problems and improve business outcomes.
+
+Key Responsibilities:
+
+Design, develop, and implement machine learning models
+Perform data preprocessing, feature engineering, and exploratory data analysis
+Work with structured and unstructured datasets
+Evaluate model performance and optimize accuracy
+Deploy models using APIs or cloud platforms
+Collaborate with cross-functional teams including software developers and product managers
+Monitor models and update them based on new data
+
+Required Skills:
+
+Strong programming skills in Python
+Knowledge of machine learning algorithms such as regression, classification, and clustering
+Experience with libraries such as scikit-learn, TensorFlow, or PyTorch
+Understanding of Natural Language Processing concepts
+Familiarity with data analysis tools like Pandas, NumPy, and Matplotlib
+Basic knowledge of SQL and databases
+Strong analytical and problem-solving skills
+
+Preferred Qualifications:
+
+Experience with deep learning frameworks
+Knowledge of computer vision or NLP projects
+Familiarity with cloud platforms such as AWS, GCP, or Azure
+Understanding of MLOps practices
+Prior internship or academic project experience in machine learning
+
+What We Offer:
+
+Opportunity to work on real-world AI applications
+Supportive and collaborative team environment
+Learning and development opportunities
+Career growth and advancement opportunities
