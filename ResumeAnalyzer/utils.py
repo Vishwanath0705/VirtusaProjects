@@ -1,34 +1,59 @@
-import spacy
 from PyPDF2 import PdfReader
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
+import docx
+import re
 
-nlp = spacy.load("en_core_web_sm")
-
-
-def extract_text_from_pdf(file_path):
-    reader = PdfReader(file_path)
+def extract_text_from_pdf(file):
     text = ""
+    reader = PdfReader(file)
+
     for page in reader.pages:
-        text += page.extract_text()
+        content = page.extract_text()
+        if content:
+            text += content + "\n"
+
     return text
 
 
-def extract_skills(text):
-    doc = nlp(text.lower())
-    skills = []
-    for token in doc:
-        if token.pos_ in ["NOUN", "PROPN"]:
-            skills.append(token.text)
-    return list(set(skills))
+def extract_text_from_word(file):
+    text = ""
+    doc = docx.Document(file)
+
+    for para in doc.paragraphs:
+        text += para.text + "\n"
+
+    return text
 
 
-def match_score(resume_text, job_text):
-    cv = CountVectorizer()
-    matrix = cv.fit_transform([resume_text, job_text])
-    similarity = cosine_similarity(matrix)[0][1]
-    return round(similarity * 100, 2)
+def data_clean(text):
+    text = text.lower()
+    text = re.sub(r"[^a-zA-Z0-9\n\s]", " ", text)
+    text = re.sub(r"\s+", " ", text)
+    return text.strip()
 
 
-def missing_skills(resume_skills, job_skills):
-    return list(set(job_skills) - set(resume_skills))
+SECTIONS = {
+    "education": ["education", "academic"],
+    "experience": ["experience", "work experience", "internship"],
+    "projects": ["projects", "project"],
+    "skills": ["skills", "technical skills"],
+    "certifications": ["certifications", "certificates"],
+    "achievements": ["achievements", "awards"]
+}
+
+
+def extract_sections(text):
+    sections = {key: "" for key in SECTIONS}
+    current_section = None
+
+    for line in text.split("\n"):
+        line_lower = line.lower().strip()
+
+        for section, keywords in SECTIONS.items():
+            if any(k in line_lower for k in keywords):
+                current_section = section
+                break
+
+        if current_section:
+            sections[current_section] += line + "\n"
+
+    return sections

@@ -1,0 +1,39 @@
+Job Title: Software Development Engineer (SDE-1) – Fresher
+Job Summary
+
+We are seeking highly motivated and passionate Software Development Engineers to join our engineering team. As an SDE-1, you will work on designing, developing, and maintaining scalable software systems that power large-scale products used by millions of users globally. You will collaborate with cross-functional teams to solve complex technical problems and deliver high-quality software solutions.
+
+Key Responsibilities
+Design, develop, test, and deploy scalable and reliable software systems.
+Write clean, efficient, and maintainable code following best engineering practices.
+Participate in system design discussions and contribute ideas for architecture improvements.
+Collaborate with product managers, designers, and other engineers to define and implement features.
+Debug, optimize, and enhance existing systems for performance and scalability.
+Participate in code reviews to maintain high code quality standards.
+Work on data structures, algorithms, and system-level problem-solving.
+Continuously learn and adapt to new technologies and tools.
+Basic Qualifications
+Bachelor’s degree in Computer Science, Information Technology, or related field.
+Strong foundation in Data Structures and Algorithms.
+Proficiency in at least one programming language (Java / Python / C++ / JavaScript).
+Understanding of object-oriented programming (OOP) concepts.
+Familiarity with databases (SQL/NoSQL).
+Good problem-solving and analytical thinking skills.
+Ability to write clean and modular code.
+Preferred Qualifications
+Experience with web development (React, Node.js, Spring Boot, etc.).
+Knowledge of system design fundamentals (scalability, caching, load balancing).
+Exposure to cloud platforms (AWS / Azure / GCP).
+Understanding of REST APIs and microservices architecture.
+Participation in competitive programming (LeetCode, Codeforces, etc.).
+Internship or project experience in real-world applications.
+Soft Skills
+Strong communication and teamwork abilities.
+Ownership mindset and willingness to take initiative.
+Ability to learn quickly in a fast-paced environment.
+Strong attention to detail and debugging skills.
+What You Will Gain
+Opportunity to work on large-scale distributed systems.
+Mentorship from senior engineers.
+Exposure to cutting-edge technologies.
+Career growth in a high-impact engineering environment.
