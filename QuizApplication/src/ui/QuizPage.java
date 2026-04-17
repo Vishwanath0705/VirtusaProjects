@@ -36,7 +36,6 @@ public class QuizPage extends JFrame {
 
     javax.swing.Timer swingTimer;
 
-    // 🔥 FIX: prevents double scoring
     boolean answered = false;
 
     public QuizPage(String name, String roll, String email, String phone) {
@@ -130,7 +129,7 @@ public class QuizPage extends JFrame {
             timeLeft = 45;
             lblTimer.setText("Time: 45");
 
-            answered = false; // 🔥 RESET for new question
+            answered = false;
 
             if (currentIndex == questions.size() - 1) {
                 btnNext.setText("Submit");
@@ -145,7 +144,7 @@ public class QuizPage extends JFrame {
 
     private void evaluate() {
 
-        if (answered) return; // 🔥 prevent double scoring
+        if (answered) return; 
 
         String selected = null;
 
@@ -177,7 +176,7 @@ public class QuizPage extends JFrame {
             lblTimer.setText("Time: " + timeLeft);
 
             if (timeLeft <= 0) {
-                swingTimer.stop(); // 🔥 prevent overlap
+                swingTimer.stop(); 
                 nextQuestion();
             }
         });
