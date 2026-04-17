@@ -8,7 +8,7 @@ public class UserService {
 
     private UserDao dao = new UserDao();
 
-    // 🔥 Register
+    // Register
     public boolean register(User user) throws SQLException {
 
         if (user == null ||
@@ -25,7 +25,7 @@ public class UserService {
         return dao.registerUser(user);
     }
 
-    // 🔥 Login
+    // Login
     public User login(String username, String password) {
 
         if (isEmpty(username) || isEmpty(password)) {
@@ -35,7 +35,7 @@ public class UserService {
         return dao.loginUser(username, password);
     }
 
-    // 🔥 Forgot Password
+    // Forgot Password
     public boolean resetPassword(String username, String newPassword) {
 
         if (isEmpty(username) || isEmpty(newPassword)) {
