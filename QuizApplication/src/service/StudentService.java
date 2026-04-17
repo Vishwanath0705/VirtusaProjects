@@ -10,7 +10,7 @@ public class StudentService {
 
     private StudentDao dao = new StudentDao();
 
-    // 🔥 Save Result
+    // Save Result
     public boolean saveResult(Student s) throws SQLException {
 
         if (s == null || isEmpty(s.getName())) {
@@ -23,7 +23,7 @@ public class StudentService {
         return dao.saveStudentResults(s);
     }
 
-    // 🔥 View Results
+    // View Results
     public List<Student> getAllResults() throws SQLException {
         return dao.getAllResult();
     }
