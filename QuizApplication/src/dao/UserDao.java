@@ -57,7 +57,7 @@ public class UserDao {
         return null;
     }
     
-    // 🔥 3. Update Password (Forgot Password)
+    // Update Password (Forgot Password)
     public boolean updatePassword(String username, String newPassword) {
 
         String sql = "UPDATE users SET password=? WHERE username=?";
@@ -76,7 +76,7 @@ public class UserDao {
         }
     }
 
-    // 🔥 4. Check Username Exists (Validation)
+    //  Check Username Exists (Validation)
     public boolean isUserExists(String username) {
 
         String sql = "SELECT id FROM users WHERE username=?";
