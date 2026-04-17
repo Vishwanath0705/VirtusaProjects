@@ -25,8 +25,8 @@ Features Patient, doctor, appointment, and treatment management Revenue analysis
 ## Quiz Application (Java Swing + MySQL) Overview
 A desktop-based quiz application with admin and student modules. Admin manages questions while students can register, take quizzes, and view results.
 
-Features Admin: add, update, delete questions Student registration and login Quiz system with scoring Result generation and display Database integration Tech Stack Java Swing MySQL JDBC
+Features Admin: add, update, delete questions Student registration and login Quiz system with scoring Result generation and display Database integration Tech Stack Java Swing MySQL 
 
--> How to Run javac Main.java java Main
+-> How to Run javac main.java java main
 
--> Key Concepts Used Object-Oriented Programming (OOP) Event-driven programming Database connectivity GUI development
+-> Key Concepts Used Object-Oriented Programming (OOP) ,Database connectivity and GUI development
