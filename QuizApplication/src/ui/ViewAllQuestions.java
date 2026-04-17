@@ -65,7 +65,7 @@ public class ViewAllQuestions extends JFrame {
 
         sb.append("------------------------------------------------------------\n\n");
 
-        i++; // 🔥 increment display number
+        i++;
     }
 
     textArea.setText(sb.toString());
