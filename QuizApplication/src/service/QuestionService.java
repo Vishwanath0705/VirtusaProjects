@@ -10,7 +10,7 @@ public class QuestionService {
 
     private QuestionDao dao = new QuestionDao();
     
-    // 🔥 Add Question
+    //  Add Question
     public boolean addQuestion(Question q) throws SQLException {
 
         if (q.getId() <= 0) {
@@ -24,7 +24,7 @@ public class QuestionService {
         return dao.addQuestion(q);
     }
 
-    // 🔥 Update Question
+    // Update Question
     public boolean updateQuestion(Question q) {
         if (q.getId() <= 0) {
             throw new RuntimeException("Invalid ID");
@@ -32,7 +32,7 @@ public class QuestionService {
         return dao.updateQuestion(q);
     }
 
-    // 🔥 Delete Question
+    // Delete Question
     public boolean deleteQuestion(int id) {
         if (id <= 0) {
             throw new RuntimeException("Invalid ID");
@@ -40,12 +40,12 @@ public class QuestionService {
         return dao.deleteQuestion(id);
     }
 
-    // 🔥 Get All Questions
+    //  Get All Questions
     public List<Question> getAllQuestions() {
         return dao.getAllQuestions();
     }
 
-    // 🔧 Helper
+    //  Helper
     private boolean isEmpty(String str) {
         return str == null || str.trim().isEmpty();
     }
